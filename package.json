@@ -2,7 +2,9 @@
   "name": "back-end_assignment_1",
   "version": "1.0.0",
   "main": "index.js",
-  "directories": {"test": "test"},
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "start": "ts-node src/server.ts",
     "build": "tsc",

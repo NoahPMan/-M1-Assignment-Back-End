@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "target": "ES6",
+        "target": "ESNext",
         "module": "commonjs",
+        "moduleResolution": "node",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
@@ -17,9 +18,7 @@
         "baseUrl": "./",
         "paths": {
             "*": ["*"]
-        },
-        "sourceMap": true,
-        "incremental": true
+        }
     },
     "include": ["src/**/*", "test/**/*", "config/**/*"],
     "exclude": ["node_modules", "dist"]
