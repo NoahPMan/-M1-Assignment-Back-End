@@ -1,5 +1,7 @@
 import swaggerUi from "swagger-ui-express";
+
 import swaggerJsDoc, { Options } from "swagger-jsdoc";
+
 import { Express } from "express";
 
 const swaggerOptions: Options = {
@@ -10,10 +12,9 @@ const swaggerOptions: Options = {
 			version: "1.0.0",
 		},
 	},
-	apis: ["./src/app.ts"], // Path to the API docs when routes are in app.ts
+	apis: ["./src/app.ts"],
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const swaggerDocs: any = swaggerJsDoc(swaggerOptions);
 
 const setupSwagger = (app: Express): void => {
